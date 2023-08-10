@@ -1,0 +1,237 @@
+.mainFooter {
+    background-color: black;
+    padding-bottom: 70px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.mainFooter .imageLayer {
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url('https://mediacity.co.in/delici/static/media/image-4.d995f9d301855fd7f80c.jpg')
+}
+
+.mainFooter .upperSection {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.mainFooter .infoCol {
+    color: #a7a7a7;
+    order: 4;
+    position: relative;
+}
+
+.mainFooter .footerCol {
+    position: relative;
+    text-align: center;
+}
+
+.mainFooter .infoCol .inner {
+    background: #0e0d0c url(/pattern-4.png) center top repeat;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 100px 30px 90px 30px;
+    position: relative;
+}
+
+.mainFooter .infoCol .inner:before {
+    background: url(/pattern-9.svg) 50% repeat;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+}
+
+.mainFooter .infoCol .inner:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background: url(/pattern-9.svg) center repeat;
+}
+
+
+.mainFooter .infoCol .content {
+    margin: 0 auto;
+    max-width: 460px;
+    position: relative;
+}
+
+
+.mainFooter .infoCol .logo {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.customListGroupItem {
+    position: relative;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    border: none
+  }
+
+  .linkStyle{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .mainFooter .infoCol .separator {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.mainFooter .infoCol .separator span {
+    border: 1px solid #e4c590;
+    display: inline-block;
+    height: 8px;
+    margin: 0 1px;
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    vertical-align: middle;
+    width: 8px;
+}
+
+.mainFooter .linksCol {
+    position: relative;
+    color: #a7a7a7;
+}
+
+.mainFooter .linksCol .inner {
+    min-height: 100%;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    position: relative;
+    text-align: center;
+}
+
+.mainFooter .linksCol .item {
+    padding: 15px
+}
+
+.mainFooter .linksCol.last {
+    order: 12;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.mainFooter .infoCol .newsletter {
+    position: relative;
+}
+
+.mainFooter .infoCol .newsletter .text {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.mainFooter .infoCol .newsletterForm {
+    margin-top: 30px;
+    position: relative;
+}
+
+.mainFooter .infoCol .input{
+    background-color: #1a1b1c;
+    border: none;
+    border-radius: 0;
+    color: #a7a7a7;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 56px;
+    line-height: 34px;
+    padding: 10px 20px 10px 40px;
+    position: relative;
+    transition: all .3s ease;
+    width: 100%,
+  }
+
+.input:focus { 
+    outline: none !important;
+    border:none;
+    box-shadow: none;
+ }
+
+  .mainFooter .infoCol .inputGroup{
+  border: 1px solid #a7a7a7;
+  }
+
+  .inputGroup:focus{
+    border: 1px solid #e4c590;
+    }
+
+
+
+.mainFooter .infoCol .iconContainer{
+    background-color: #1a1b1c;
+    border: none;
+    border-radius: 0;
+    color: #a7a7a7;
+}
+
+.mainFooter .footerBottom {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.mainFooter .copyright {
+    color: #a7a7a7;
+    line-height: 1.5em;
+    position: relative;
+   
+}
+
+.btnStyle {
+    background: #e4c590;
+    border: 2px solid #e4c590;
+    border-radius: 0;
+    color: #000;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    overflow: hidden;
+    padding: 11px 45px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+    vertical-align: top;
+}
+
+.btnStyle:hover {
+    
+    background: #e4c590;
+    border: 2px solid #e4c590;
+}
+
+
+.mainFooter .copyright .linkStyle{
+    text-decoration: underline;
+    color: #e4c590;
+    margin-left: 8px;
+
+  }

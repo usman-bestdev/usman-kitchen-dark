@@ -1,0 +1,12 @@
+.mainContainer{
+background-color:#0e0d0c;
+}
+.separatorImage{
+    height: 13px;
+     width: 100px;
+  }
+
+.description{
+    max-width: 420px;
+    line-height:  1.85em;
+}

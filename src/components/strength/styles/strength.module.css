@@ -1,0 +1,30 @@
+.mainContainer{
+    background-color: #171819;
+    padding-bottom: 60px;
+    padding-top: 100px;
+  }
+
+.strengthCardStyle{
+    /* height: 274.8px; */
+    width: 100%;
+    border-radius: 0;
+}
+
+.strengthCardLightStyle{
+  background-color: #151616
+}
+
+
+.strengthCardDarkStyle{
+  background-color: #121111
+}
+
+.strengthCardImageContainer{
+  padding-top: 14px;
+  height: 80px;
+  width: 100px;}
+
+.strengthSeparatorImage{
+  height: 13px;
+   width: 100px;
+}
