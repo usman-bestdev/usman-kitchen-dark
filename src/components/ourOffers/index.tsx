@@ -2,10 +2,14 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import { breakpoints, offersData } from "./constant";
 import {
+  cardHeading,
+  cardView,
   contentContainerClasses,
   descriptionClasses,
   headingClasses,
+  mainColClasses,
   mainContainerClasses,
+  pattern,
   separatorImageClasses,
   subHeadingClasses,
 } from "./styles/ourOffers";
@@ -39,16 +43,8 @@ const OurOffers: React.FC = () => {
         <Container>
           <Row className="m-0">
             {offersData.map((offer) => (
-              <Col
-                key={offer}
-                {...breakpoints}
-                className="p-0 d-flex flex-column align-items-center">
-                <div
-                  style={{
-                    position: "relative",
-                    width: "140px",
-                    height: "402px",
-                  }}>
+              <Col key={offer.id} {...breakpoints} className={mainColClasses}>
+                <div className={pattern}>
                   <Image
                     src={"/pattern-8.png"}
                     fill
@@ -71,9 +67,8 @@ const OurOffers: React.FC = () => {
                     />
                   </div>
                 </div>
-                <p className="fs-3 text-white mt-4">{offer.heading}</p>
-
-                <p className="primaryColor fs-6">VIEW MENU</p>
+                <p className={cardHeading}>{offer.heading}</p>
+                <p className={cardView}>VIEW MENU</p>
               </Col>
             ))}
           </Row>

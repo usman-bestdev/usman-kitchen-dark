@@ -1,0 +1,24 @@
+.mainContainer{
+    background-color: #171819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.card{
+    width: 90%;
+    border: none; 
+}
+
+.cardBody{
+    background-color: #171819;
+    padding: 0;
+    padding-top: 25px;
+}
+
+.cardImage{
+    object-fit: cover;
+     height: 100%;
+}

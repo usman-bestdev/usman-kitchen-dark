@@ -25,7 +25,7 @@ const OurStrength: React.FC = () => {
 
         <Row className={mainRowClasses}>
           {cardData.map((card) => (
-            <StrengthCard {...card} />
+            <StrengthCard {...card} key={card.title} />
           ))}
         </Row>
       </Container>

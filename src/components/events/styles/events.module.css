@@ -1,0 +1,57 @@
+.mainContainer{
+    background-color: #0e0d0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.buttonStyle{
+    border: 1px solid #e4c590;
+    border-radius: 0;
+    color: #e4c590;
+}
+
+.buttonStyle:hover{
+background-color: #e4c590;
+    color: black;
+}
+
+.cardBase{
+    opacity: .7;
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    left: 0;
+    bottom: 0;   
+}
+
+.cardImage{
+    width: 100%;
+    height: 459px;
+    object-fit: cover; 
+}
+
+.eventCard{
+    border: 0;
+    border-radius: 0;
+    width: 92%;
+}
+
+.cardDate{
+    background-color: black;
+    color: #e4c590;
+    width: 90px;
+}
+
+
+.cardBaseContent{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    z-index: 1;
+}

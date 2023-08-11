@@ -7,15 +7,18 @@ export const breakpoints = {
 
 export const offersData = [
   {
+    id: 1,
     imageSource: "/offer-1.jpg",
     heading: "Breakfast",
   },
   {
+    id: 2,
     imageSource: "/offer-2.jpg",
     heading: "Appetizers",
   },
   {
-    imageSource: "/offer-2.jpg",
+    id: 3,
+    imageSource: "/offer-3.jpg",
     heading: "Drinks",
   },
 ];
