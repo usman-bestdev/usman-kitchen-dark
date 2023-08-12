@@ -34,21 +34,9 @@
   z-index: 1; */
   display: none;
 }
-/* .owl-theme .owl-nav .owl-prev{
-  /*border: 1px solid #e4c590;
-  position: absolute;
-  height: 100px;
-  display: flex;
-  justify-content: flex;
-   content: "";
-  left: 0;
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transition: all .4s ease; 
-  z-index: 10;
-  width: 100px; */
-
+.appBarBackground{
+  background-color: #171819;
+}
 
 .owl-theme .owl-nav {
   color: #e4c590;
@@ -77,4 +65,8 @@
   background-position: center;
   opacity: 0.4;
   z-index: -1; 
+}
+
+.primaryFont{
+  font-family: Forum;
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { breakpoints } from "./constant";
 import {
   cardStyleDarkClasses,
+  cardStyleLightClasses,
   containerClasses,
   strengthCardHeadingClasses,
   strengthDescriptionClasses,
@@ -15,10 +16,11 @@ const StrengthCard: React.FC<IStrengthCardProps> = ({
   imageSource,
   title,
   description,
+  dark,
 }) => {
   return (
     <Col {...breakpoints}>
-      <Card className={cardStyleDarkClasses}>
+      <Card className={dark ? cardStyleDarkClasses : cardStyleLightClasses}>
         <Card.Body className={containerClasses}>
           <div className={strengthImageContainerClasses}>
             <Image src={imageSource} fill sizes="" alt="OurStrength Image" />

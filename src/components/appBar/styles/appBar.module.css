@@ -1,14 +1,36 @@
 .mainContainer{
     margin-bottom: -100px;
+  border: 1px solid hsla(0,0%,100%,.1);
 }
 
 .buttonStyle{
     border: 1px solid #e4c590;
     border-radius: 0;
-    color: #e4c590;
+    color: black;
+    background-color:#e4c590 ;
+    width: 100px;
 }
 
 .buttonStyle:hover{
 background-color: #e4c590;
     color: black;
 }
+
+
+.input{
+    background: transparent;
+    border: 1px solid #e4c590;
+    color: white;
+    border-radius: 0;
+    font-size: 16px;
+    max-width: 200px;
+  }
+
+
+  .input:focus { 
+    background-color: transparent;
+    outline: none !important;
+    color: white;
+    border:1px solid #e4c590;
+    box-shadow: none;
+ }

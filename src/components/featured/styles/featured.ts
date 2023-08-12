@@ -6,7 +6,7 @@ flex-column
 justify-content-center 
 ${styles.menuContainer}`;
 
-export const headingClasses = `fs-2 text-white`;
+export const headingClasses = `fs-2 text-white primaryFont`;
 
 export const descriptionClasses = `secondaryColor pb-4`;
 

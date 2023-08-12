@@ -41,9 +41,14 @@ const OurOffers: React.FC = () => {
         </div>
 
         <Container>
-          <Row className="m-0">
-            {offersData.map((offer) => (
-              <Col key={offer.id} {...breakpoints} className={mainColClasses}>
+          <Row className="m-0 d-flex justify-content-center">
+            {offersData.map((offer, index) => (
+              <Col
+                key={offer.id}
+                {...breakpoints}
+                className={`${mainColClasses} ${
+                  (index + 1) % 2 == 0 && "mt-5"
+                }`}>
                 <div className={pattern}>
                   <Image
                     src={"/pattern-8.png"}

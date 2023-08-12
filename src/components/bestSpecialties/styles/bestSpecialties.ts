@@ -12,7 +12,7 @@ export const cardClasses = `${styles.card}`;
 
 export const cardBodyClasses = `${styles.cardBody}`;
 
-export const cardTitleClasses = `fs-4 text-white`;
+export const cardTitleClasses = `fs-4 text-white primaryFont`;
 
 export const cardImageClasses = `${styles.cardImage}`;
 
@@ -20,7 +20,7 @@ export const carouselMainClasses = `${styles["owl-loaded"]} mainContainer`;
 
 export const firstHeading = `primaryColor text-uppercase fs-6`;
 
-export const secondHeading = `text-white fs-2 mt-3 mb-5`;
+export const secondHeading = `text-white fs-2 mt-3 mb-5 primaryFont`;
 
 export const buttonClasses = `${styles.buttonStyle} mt-5`;
 

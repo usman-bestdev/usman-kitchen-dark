@@ -64,7 +64,9 @@ const Footer: React.FC = () => {
                     <span />
                   </div>
                   <div className={styles.newsletter}>
-                    <h3>Get News &amp; Offers</h3>
+                    <h3 className="primaryFont text-white">
+                      Get News &amp; Offers
+                    </h3>
                     <div className="text">
                       Subscribe us &amp; Get <span>25% Off.</span>
                     </div>

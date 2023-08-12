@@ -1,0 +1,53 @@
+.mainContainer{
+    background-color: #171819;
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+
+
+.buttonStyle{
+    border: 1px solid #e4c590;
+    border-radius: 0;
+    color: #e4c590;
+    width: 100%;
+}
+
+.buttonStyle:hover{
+background-color: #e4c590;
+    color: black;
+}
+
+.addressContainer{
+    background: #0e0d0c url(/pattern-4.png) center top repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    background-color: #0e0d0c;
+    padding-block: 60px;
+}
+
+.input{
+    background-color: #1a1b1c;
+    border: 1px solid hsla(0,0%,100%,.1);
+    color: white;
+    border-radius: 0;
+    margin-block: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 56px;
+    line-height: 34px;
+    padding: 10px 20px 10px 40px;
+  }
+
+
+  .input:focus { 
+    background-color: #1a1b1c;
+    outline: none !important;
+    color: white;
+    border:1px solid #e4c590;
+    box-shadow: none;
+ }

@@ -14,7 +14,7 @@ if (typeof window !== "undefined") {
   window.$ = window.jQuery = $;
 }
 
-import { headerCarouselOptions, menuData } from "./constant";
+import { specialtiesCarouselOptions, menuData } from "./constant";
 import SpecialtiesCard from "./specialtiesCard";
 import {
   buttonClasses,
@@ -28,6 +28,17 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 });
 
 const BestSpecialties: React.FC = () => {
+  const responsive = {
+    sm: {
+      items: 1,
+    },
+    md: {
+      items: 3,
+    },
+    lg: {
+      items: 4,
+    },
+  };
   return (
     <div className={mainContainerClasses}>
       <p className={firstHeading}>special offer</p>
@@ -38,7 +49,11 @@ const BestSpecialties: React.FC = () => {
 
       <p className={secondHeading}>Best Specialties</p>
 
-      <OwlCarousel {...headerCarouselOptions} items={4} className="owl-theme">
+      <OwlCarousel
+        responsive={responsive}
+        {...specialtiesCarouselOptions}
+        items={4}
+        className="owl-theme">
         {menuData.map((item) => (
           <div className="item" key={item.id}>
             <SpecialtiesCard {...item} />

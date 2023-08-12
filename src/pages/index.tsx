@@ -9,6 +9,7 @@ import OurOffers from "@/components/ourOffers";
 import SpecialDish from "@/components/specialDish";
 import OurStrength from "@/components/strength";
 import Head from "next/head";
+import OrderForm from "@/components/orderForm";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <HeaderCarousel />
       <OurOffers />
       <SpecialDish />
+      <OrderForm />
       <BestSpecialties />
       <OurStrength />
       <Featured />

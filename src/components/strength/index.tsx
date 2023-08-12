@@ -24,8 +24,12 @@ const OurStrength: React.FC = () => {
         <p className={subHeadingClasses}>Our Strength</p>
 
         <Row className={mainRowClasses}>
-          {cardData.map((card) => (
-            <StrengthCard {...card} key={card.title} />
+          {cardData.map((card, index) => (
+            <StrengthCard
+              {...card}
+              key={card.title}
+              dark={(index + 1) % 2 != 0}
+            />
           ))}
         </Row>
       </Container>

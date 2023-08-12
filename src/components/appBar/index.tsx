@@ -1,21 +1,23 @@
-import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { buttonClasses, mainContainerClasses } from "./styles/appBar";
-import Image from "next/image";
+import {
+  buttonClasses,
+  inputClasses,
+  mainContainerClasses,
+} from "./styles/appBar";
 
 function AppBar() {
-  const [expand, setExpand] = useState(false);
   const [navbarClass, setNavbarClass] = useState("bg-transparent");
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      setNavbarClass("bg-dark");
+      setNavbarClass("appBarBackground");
     } else {
       setNavbarClass("bg-transparent");
     }
@@ -30,29 +32,40 @@ function AppBar() {
 
   return (
     <Navbar
-      expand={expand}
+      expand={"xl" || "lg" || "md"}
       className={` ${navbarClass} ${mainContainerClasses}`}
       sticky="top">
       <Container fluid>
-        <Navbar.Toggle style={{ color: "white" }} />
+        <Navbar.Toggle
+          style={{ backgroundColor: "#121111", borderColor: "#e4c590" }}
+        />
         <Image src={"/logo.png"} width={160} height={50} alt="Logo image" />
-        <Button className={buttonClasses} variant="outline">
-          FIND A TABLE
-        </Button>
 
-        <Navbar.Offcanvas placement="start" className="bg-dark p-5 text-white">
+        <Navbar.Offcanvas placement="start" className={navbarClass}>
           <Offcanvas.Header closeButton className="color-white">
             <Image src={"/logo.png"} width={160} height={50} alt="Logo image" />
           </Offcanvas.Header>
+
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3 bg-dark">
-              <Nav.Link href="/">HOME</Nav.Link>
-              <NavDropdown title="MENUS">
-                <NavDropdown.Item href="#action3">MENU 1</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">MENU 2</NavDropdown.Item>
-                <NavDropdown.Item href="#action5">MENU 3</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/">ABOUT US</Nav.Link>
+            <Nav
+              className={` justify-content-end flex-grow-1 pe-3 ${navbarClass} `}>
+              <Nav.Link href="/" className="text-white">
+                HOME
+              </Nav.Link>
+              <Nav.Link href="/" className="text-white">
+                ABOUT US
+              </Nav.Link>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  defaultValue={"Search"}
+                  placeholder="Search"
+                  className={inputClasses}
+                />
+                <Button className={buttonClasses} variant="outline">
+                  Search
+                </Button>
+              </Form>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

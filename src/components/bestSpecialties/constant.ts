@@ -49,11 +49,23 @@ export const menuData = [
   },
 ];
 
-export const headerCarouselOptions = {
+export const specialtiesCarouselOptions = {
   loop: true,
   margin: 10,
   autoplay: true,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
   rewind: true,
+};
+
+export const responsive = {
+  sm: {
+    items: 1,
+  },
+  md: {
+    items: 3,
+  },
+  lg: {
+    items: 4,
+  },
 };

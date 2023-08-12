@@ -9,7 +9,7 @@ export const separatorImageClasses = `separatorImage position-relative`;
 
 export const headingClasses = `fs-5 primaryColor`;
 
-export const subHeadingClasses = `text-white fs-2`;
+export const subHeadingClasses = `text-white fs-2 primaryFont`;
 
 export const descriptionClasses = `text-white`;
 
