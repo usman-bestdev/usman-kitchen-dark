@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import { Card, Col } from "react-bootstrap";
 import Image from "next/image";
 
 import { breakpoints } from "./constant";
 import {
+  animateImage,
   cardStyleDarkClasses,
   cardStyleLightClasses,
   containerClasses,
@@ -18,11 +20,26 @@ const StrengthCard: React.FC<IStrengthCardProps> = ({
   description,
   dark,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <Col {...breakpoints}>
       <Card className={dark ? cardStyleDarkClasses : cardStyleLightClasses}>
-        <Card.Body className={containerClasses}>
-          <div className={strengthImageContainerClasses}>
+        <Card.Body
+          className={containerClasses}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}>
+          <div
+            className={`${strengthImageContainerClasses} ${
+              isHovered ? animateImage : ""
+            }`}>
             <Image src={imageSource} fill sizes="" alt="OurStrength Image" />
           </div>
           <Card.Title className={strengthCardHeadingClasses}>

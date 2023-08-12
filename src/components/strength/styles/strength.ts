@@ -28,3 +28,5 @@ export const strengthSeparatorImageClasses = `${styles.strengthSeparatorImage} p
 export const subHeadingClasses = `text-white fs-2 mt-4 primaryFont`;
 
 export const mainRowClasses = `m-0`;
+
+export const animateImage = `animate__animated animate__jackInTheBox`;

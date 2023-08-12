@@ -1,24 +1,16 @@
 import Image from "next/image";
-import { Button, Card, Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 import { breakpoints, eventsData } from "./constant";
+import EventCard from "./eventCard";
 import {
   buttonClasses,
-  cardBaseClasses,
-  cardBaseContentClasses,
-  cardDateClasses,
-  cardDescription,
-  cardImageClasses,
-  cardNameClasses,
-  eventCardClasses,
   firstHeading,
-  imageOverlyClasses,
   mainColClasses,
   mainContainerClasses,
   secondHeading,
   separatorImageClasses,
 } from "./styles/events";
-import EventCard from "./eventCard";
 
 const Events: React.FC = () => {
   return (

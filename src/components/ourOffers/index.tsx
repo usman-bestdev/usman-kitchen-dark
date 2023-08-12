@@ -1,6 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 
+import Image from "next/image";
+import { useState } from "react";
 import { breakpoints, offersData } from "./constant";
+import { animateBackgroundPattern } from "./styles/amination";
 import {
   cardHeading,
   cardView,
@@ -13,9 +16,17 @@ import {
   separatorImageClasses,
   subHeadingClasses,
 } from "./styles/ourOffers";
-import Image from "next/image";
 
 const OurOffers: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <>
       <div className={mainContainerClasses}>
@@ -49,7 +60,10 @@ const OurOffers: React.FC = () => {
                 className={`${mainColClasses} ${
                   (index + 1) % 2 == 0 && "mt-5"
                 }`}>
-                <div className={pattern}>
+                <div
+                  className={`${pattern} ${
+                    isHovered ? animateBackgroundPattern : ""
+                  }`}>
                   <Image
                     src={"/pattern-8.png"}
                     fill
@@ -57,7 +71,11 @@ const OurOffers: React.FC = () => {
                     sizes=""
                   />
                 </div>
-                <div style={{ position: "absolute", marginTop: "30px" }}>
+
+                <div
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ position: "absolute", marginTop: "30px" }}>
                   <div
                     style={{
                       position: "relative",

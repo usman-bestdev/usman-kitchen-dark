@@ -59,13 +59,16 @@ export const specialtiesCarouselOptions = {
 };
 
 export const responsive = {
-  sm: {
+  0: {
     items: 1,
+    ...specialtiesCarouselOptions,
   },
-  md: {
+  600: {
     items: 3,
+    ...specialtiesCarouselOptions,
   },
-  lg: {
+  1000: {
     items: 4,
+    ...specialtiesCarouselOptions,
   },
 };
